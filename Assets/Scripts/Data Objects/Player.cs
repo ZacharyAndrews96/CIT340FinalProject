@@ -23,7 +23,7 @@ public class Player
 
     public Player()
     {
-        Money = 10000;
+        Money = 1000;
         Storage = 200;
         Speed = 3.0f;
         Boost = .5f;

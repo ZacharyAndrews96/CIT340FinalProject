@@ -65,6 +65,16 @@ public class Planet
             {
                 R.CurrentPrice = R.BasePrice /5 * 2;
             }
+            //also do a check to make sure the price can't be to high limit it to 10x
+            if(R.CurrentPrice > R.BasePrice * 10)
+            {
+                R.CurrentPrice = R.BasePrice * 10;
+            }
+        }
+        //if there is more than 100 food and goods tell the gamemaster to turn off the particle system
+        if(Stockpile[0].Amount > 100 && Stockpile[3].Amount > 100)
+        {
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameMaster>().TurnOffParticles(this);
         }
     }
     public void AddResource(string N, int A)

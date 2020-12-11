@@ -636,7 +636,7 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberSmelters
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -652,6 +652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: PlanetID
       value: LV2-CIty2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberMines
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -848,7 +853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1242019724
 PrefabInstance:
@@ -956,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberCitiesAndLevel.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}

@@ -349,7 +349,7 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberCitiesAndLevel.Array.data[0]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -359,12 +359,12 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberSmelters
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFactories
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -375,6 +375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NumberFarms
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberMines
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -1093,6 +1098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NumberFarms
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberSmelters
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -1903,23 +1913,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
-      propertyPath: NumberCitiesAndLevel.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
-        type: 3}
-      propertyPath: NumberCitiesAndLevel.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
-        type: 3}
       propertyPath: NumberSmelters
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
-        type: 3}
-      propertyPath: NumberFactories
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -2121,6 +2116,61 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2227101951729886028, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.8018868
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.20803669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.20803669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.25477055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.24701849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426734476428315343, guid: 4282359686ec7434287d84375a908f76,
+        type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7486301315817324626, guid: 4282359686ec7434287d84375a908f76,
         type: 3}
       propertyPath: m_LocalPosition.x

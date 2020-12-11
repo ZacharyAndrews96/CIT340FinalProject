@@ -254,7 +254,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &91786536
 PrefabInstance:
@@ -272,12 +272,22 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberMines
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFarms
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: PlanetID
+      value: LV3-Smelt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberSmelters
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -489,17 +499,22 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFarms
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberSmelters
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFactories
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: PlanetID
+      value: LV3-Farm
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -2087,7 +2102,22 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFarms
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: PlanetID
+      value: LV3-Factory
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberFactories
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberSmelters
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -2172,7 +2202,7 @@ PrefabInstance:
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
       propertyPath: NumberFactories
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}
@@ -2188,6 +2218,21 @@ PrefabInstance:
         type: 3}
       propertyPath: NumberCitiesAndLevel.Array.data[1]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: PlanetID
+      value: LV3-Mine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberSmelters
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478426209150624855, guid: df52268dea0d5f4409230240bd7ccad0,
+        type: 3}
+      propertyPath: NumberMines
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3498880792657510739, guid: df52268dea0d5f4409230240bd7ccad0,
         type: 3}

@@ -16,6 +16,8 @@ public class SpacePlanet : MonoBehaviour
     {
         //On start up have each planet tell the gamemaster to register them in the Data Level
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameMaster>().RegistarPlanetToData(transform.GetComponent<SpacePlanet>());
+        //Because i don't know how to turn of the particle system form the editor lets do it here
+        transform.GetComponent<ParticleSystem>().Stop();
     }
 
     // Update is called once per frame

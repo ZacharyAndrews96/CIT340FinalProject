@@ -83,10 +83,12 @@ public class City : Buildings
         if(X.RemoveResources("Farm Products", Foods) != true)
         {
             //Tell Data Manager to add event on planet
+            DataManager.Data.Shortage(Foods, X);
         }
         if(X.RemoveResources("Products", Goods) != true)
         {
             //tell data manger to add event on planet
+            DataManager.Data.Shortage(Goods, X);
         }
         
             

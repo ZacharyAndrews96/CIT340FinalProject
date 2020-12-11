@@ -44,6 +44,14 @@ public class DataManager
         }
         return new List<Buildings>();
     }
+    public void Shortage(int Deficit, Planet X)
+    {
+        //First lets take money for not filling the needs of the population
+        Gamer.Money -= 10 * Deficit;
+        //Next check to see if the particle system is active for the planet if not activate it
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameMaster>().TurnOnParticles(X);
+    }
+
     public void UpgradeSpeed()
     {
         Upgrades--;

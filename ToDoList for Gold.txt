@@ -1,17 +1,18 @@
-5 Custom Sprites
-1 Particle System ALways on
-	1 activated by events
+5 Custom Sprites (Done)
+1 Particle System ALways on Done
+	1 activated by events Done
 1 use of coroutine in a script
-1 use of sprite sheet animation
+1 use of sprite sheet animation - Animation to show mood of planet as resoures become more rare it will show unrest
+Write Reflection
 
 Rebalance Levels and possible buildings
-Make it so that if a planet has no food/products the player takes a money hit each day
-Add Max Price logic atleast for Minerals and components
+(Done)Make it so that if a planet has no food/products the player takes a money hit each day
+(Done)Add Max Price logic atleast for Minerals and components x
 Add Sprites to the main menu and end game scenes
-Clean up the "this planet contains these buildings" text to avoid the "Farmfarmcity" pattern and have
+(Done)Clean up the "this planet contains these buildings" text to avoid the "Farmfarmcity" pattern and have
 Farm x3
 City
 Factory x2
 
-Particle system for player truck
+Particle system for player truck 
 Particle system for planets when they run low on a resource

@@ -162,9 +162,27 @@ public class GameMaster : MonoBehaviour
         Market.transform.GetChild(14).GetComponent<Text>().text = "" + PStock[3].Amount;
         //Display the buildings at this planet
         string Structures = "The following buildings are on this planet: ";
-        foreach(Buildings B in DataManager.Data.GetPlanetCiv(PN))
+        /*foreach(Buildings B in DataManager.Data.GetPlanetCiv(PN))
         {
             Structures += B.Name;
+        }*/
+        //New Logic keep counts for each building type
+        Dictionary<string, int> Temp = new Dictionary<string, int>();
+        foreach(Buildings B in DataManager.Data.GetPlanetCiv(PN))
+        {
+            if (Temp.ContainsKey(B.Name))
+            {
+                Temp[B.Name] += 1;
+            }
+            else
+            {
+                Temp.Add(B.Name, 1);
+            }
+        }
+        //Now lets build the string to display in the texts
+        foreach(string S in Temp.Keys)
+        {
+            Structures += S + " " + Temp[S] + "x ";
         }
         Market.transform.GetChild(15).GetComponent<Text>().text = Structures;
         //Update Price for each
@@ -268,5 +286,27 @@ public class GameMaster : MonoBehaviour
         //Negative value should add to Planet Stock and subtract Ship
         Planet.text = "" + (Stock[3].Amount - Now.value);
         Ship.text = "" + (PStock[3].Amount - (-Now.value));
+    }
+    public void TurnOffParticles(Planet X)
+    {
+        foreach(GameObject G in GameObject.FindGameObjectsWithTag("Planet"))
+        {
+            if(G.GetComponent<SpacePlanet>().PlanetID == X.ID)
+            {
+                if (G.GetComponent<ParticleSystem>().isPlaying)
+                    G.GetComponent<ParticleSystem>().Stop();
+            }
+        }
+    }
+    public void TurnOnParticles(Planet X)
+    {
+        foreach (GameObject G in GameObject.FindGameObjectsWithTag("Planet"))
+        {
+            if (G.GetComponent<SpacePlanet>().PlanetID == X.ID)
+            {
+                if (G.GetComponent<ParticleSystem>().isStopped)
+                    G.GetComponent<ParticleSystem>().Play();
+            }
+        }
     }
 }
